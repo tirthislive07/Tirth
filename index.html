@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You - Tirth Raval</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .success-icon {
+            font-size: 60px;
+            color: #27ae60;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .back-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        .contact-details {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="success-icon">✓</div>
+        <h1>Thank You!</h1>
+        <p>Your message has been received successfully. I appreciate you taking the time to reach out!</p>
+        <p>I'll get back to you as soon as possible via email or phone.</p>
+        
+        <div class="contact-details">
+            <h3>My Contact Information:</h3>
+            <p><strong>Email:</strong> traval074@gmail.com</p>
+            <p><strong>Phone:</strong> +91 8799411617</p>
+            <p><strong>LinkedIn:</strong> tirth-raval-bb9815317</p>
+        </div>
+        
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    </div>
+
+    <script>
+        // Simple JavaScript to show submitted form data (optional)
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            
+            if (name) {
+                document.querySelector('h1').textContent = Thank You, ${name}!;
+            }
+        }
+    </script>
+
+</body>
+</html>
